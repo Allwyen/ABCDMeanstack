@@ -6,7 +6,7 @@ var userplatform=myos.platform();
 
 //apendfile() will not overwrite the content but the write() will.
 
-myfs.appendFile("mydata.txt",userdata.username,(error)=>{
+myfs.appendFile("mydata.txt",userdata.uid,(error)=>{
     if(error)
     {
         throw error;
