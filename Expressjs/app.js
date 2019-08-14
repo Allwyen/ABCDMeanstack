@@ -27,6 +27,10 @@ app.get('/bootstraphome',(req,res)=>{
     res.render('bootstraphome',{'names':["Allwyen","Amal","Romy","Joel"]});
 });
 
+app.get('/contact',(req,res)=>{
+    res.render('contact');
+});
+
 app.listen(3369,()=>{
     console.log("Server running on port::3369...");
 });  //we can assign any number.3000 is commonly used.

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-    <div class="container">
+    <!-- <div class="container">
         <div class="row">
             <div class="col col-12 col-sm-6 col-md-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse iure sunt hic eum dignissimos explicabo, porro odio saepe eaque obcaecati consequuntur iusto ratione nam ut omnis itaque exercitationem nostrum similique.</div>
             <div class="col col-12 col-sm-6 col-md-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, incidunt in, perferendis error vitae soluta officiis delectus dolorem nostrum dignissimos deserunt atque alias eius doloribus dolore dolores quisquam cum veritatis.</div>
@@ -43,6 +43,33 @@
                     <tr><td>Email:</td><td><input type="email" name="" id=""></td></tr>
                     <tr><td>Password:</td><td><input type="password" name="" id=""></td></tr>
                     <tr><td></td><td><input type="submit" value="submit"></td></tr>
+                </table>
+            </div>
+        </div>
+    </div> -->
+    
+    <div class="container">
+        <div class="row">
+            <div class="col col-12 col-sm-6">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Students</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% for(var i=0;i<names.length;i++){ %>
+                            <tr><td><%=names[i] %></td></tr>
+                        <% } %>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col col-12 col-sm-6">
+                <table class="table">
+                    <tr><td>Username:</td><td><input type="text" class="form-control" name="" id=""></td></tr>
+                    <tr><td>Email:</td><td><input type="email" class="form-control" name="" id=""></td></tr>
+                    <tr><td>Password:</td><td><input type="password" class="form-control" name="" id=""></td></tr>
+                    <tr><td></td><td><input type="submit" class="btn btn-info" value="submit"></td></tr>
                 </table>
             </div>
         </div>
