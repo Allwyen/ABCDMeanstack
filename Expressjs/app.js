@@ -23,6 +23,10 @@ app.get('/home',(req,res)=>{
     res.render('home',{'title':'ICTAK:Home','names':["Allwyen","Amal","Joel","Romy"]});
 });
 
+app.get('/bootstraphome',(req,res)=>{
+    res.render('bootstraphome',{'names':["Allwyen","Amal","Romy","Joel"]});
+});
+
 app.listen(3369,()=>{
     console.log("Server running on port::3369...");
 });  //we can assign any number.3000 is commonly used.
