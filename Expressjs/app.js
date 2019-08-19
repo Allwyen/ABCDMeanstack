@@ -37,8 +37,9 @@ app.get('/contact',(req,res)=>{
 });
 
 app.post('/read',(req,res)=>{
-    var name=req.body.uname;
-    res.send(req.body);
+    var items=req.body;
+    //res.send(req.body);
+    res.render('read',{item:items});
 
 });
 
